@@ -1,0 +1,14 @@
+字节码编译----“Python虚拟机(PVM)”
+一旦程序编译成字节码（或字节码从已经存在的.pyc文件中导入），之后的字节码发送到通常称为PVM上来执行
+
+
+python2.2
+>>> import py_compile
+>>> py_compile.compile('xxx.py') 
+
+python2.4 later
+#生成pyc  
+python -m py_compile xxx.py
+
+#生成pyo 
+python -O -m py_compile xxx.py
